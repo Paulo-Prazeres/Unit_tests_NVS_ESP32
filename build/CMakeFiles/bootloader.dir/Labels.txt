@@ -1,0 +1,13 @@
+# Target labels
+ bootloader
+# Source files and their labels
+C:/projects/esp32/test_nvs_rw_blob/build/CMakeFiles/bootloader
+C:/projects/esp32/test_nvs_rw_blob/build/CMakeFiles/bootloader.rule
+C:/projects/esp32/test_nvs_rw_blob/build/CMakeFiles/bootloader-complete.rule
+C:/projects/esp32/test_nvs_rw_blob/build/bootloader-prefix/src/bootloader-stamp/bootloader-install.rule
+C:/projects/esp32/test_nvs_rw_blob/build/bootloader-prefix/src/bootloader-stamp/bootloader-mkdir.rule
+C:/projects/esp32/test_nvs_rw_blob/build/bootloader-prefix/src/bootloader-stamp/bootloader-download.rule
+C:/projects/esp32/test_nvs_rw_blob/build/bootloader-prefix/src/bootloader-stamp/bootloader-update.rule
+C:/projects/esp32/test_nvs_rw_blob/build/bootloader-prefix/src/bootloader-stamp/bootloader-patch.rule
+C:/projects/esp32/test_nvs_rw_blob/build/bootloader-prefix/src/bootloader-stamp/bootloader-configure.rule
+C:/projects/esp32/test_nvs_rw_blob/build/bootloader-prefix/src/bootloader-stamp/bootloader-build.rule

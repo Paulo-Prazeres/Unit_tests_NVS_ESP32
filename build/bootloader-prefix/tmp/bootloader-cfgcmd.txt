@@ -1,0 +1,1 @@
+cmd='C:/esp/tools/.espressif/tools/cmake/3.13.4/bin/cmake.exe;-DSDKCONFIG=C:/projects/esp32/test_nvs_rw_blob/sdkconfig;-DIDF_PATH=c:/esp/esp-idf;-DIDF_TARGET=esp32;-DPYTHON=C:\Python38\python.exe;-DPYTHON_DEPS_CHECKED=1;-DEXTRA_COMPONENT_DIRS=C:/esp/esp-idf/components/bootloader;-DLEGACY_INCLUDE_COMMON_HEADERS=;--warn-uninitialized;-GNinja;<SOURCE_DIR><SOURCE_SUBDIR>'
