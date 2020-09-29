@@ -646,7 +646,7 @@ void receiveCommand()
 
 void app_main()
 {
-    //Hello
+    //Hello 2
     esp_err_t err = nvs_flash_init_partition("MyNvs");
     if (err == ESP_ERR_NVS_NO_FREE_PAGES || err == ESP_ERR_NVS_NEW_VERSION_FOUND) {
         // NVS partition was truncated and needs to be erased
