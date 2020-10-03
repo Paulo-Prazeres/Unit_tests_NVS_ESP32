@@ -271,6 +271,7 @@ C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/bootloader/CMakeFiles/install.d
 C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/bootloader/CMakeFiles/edit_cache.dir
 C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/bootloader/CMakeFiles/rebuild_cache.dir
 C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/bootloader/CMakeFiles/list_install_components.dir
+C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/bt/CMakeFiles/__idf_bt.dir
 C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/bt/CMakeFiles/install/local.dir
 C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/bt/CMakeFiles/install.dir
 C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/bt/CMakeFiles/edit_cache.dir

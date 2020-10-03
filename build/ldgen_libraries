@@ -26,6 +26,7 @@ C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/newlib/libnewlib.a
 C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/cxx/libcxx.a
 C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/app_trace/libapp_trace.a
 C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/asio/libasio.a
+C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/bt/libbt.a
 C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/coap/libcoap.a
 C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/console/libconsole.a
 C:/projects/esp32/test_nvs_rw_blob/build/esp-idf/nghttp/libnghttp.a

@@ -26,6 +26,9 @@
 #include "freertos/event_groups.h"
 #include "freertos/semphr.h"
 
+#include "nvs_blob_example_main.h"
+#include "BLE_functions_mair.h"
+
 #define STORAGE_NAMESPACE "Storage"
 #define SCHEDULES_STORAGE_NAMESPACE "schedList"
 #define LOADS_STORAGE_NAMESPACE "loadList"
@@ -644,6 +647,19 @@ void receiveCommand()
     }
 }
 
+void task_process_BLE_received_command()
+{
+    char *commandReceived = "";
+
+    while (1)
+    {           
+        xQueueReceive(xQueue_BLE_Received_Data, (void *) &commandReceived, portMAX_DELAY);
+        printf("Received in the task: task_process_BLE_received_command: %s\nAnd his data lenght: %d\n",commandReceived, strlen(commandReceived));
+        process_command(commandReceived);        
+              
+    }
+}
+
 void app_main()
 {
     //Hello 3
@@ -656,9 +672,21 @@ void app_main()
     }
     ESP_ERROR_CHECK( err );
 
-    xTaskCreate(
-    receiveCommand                     /* Funcao a qual esta implementado o que a tarefa deve fazer */
-    ,  "ProcessUartCommand"   /* Nome (para fins de debug, se necessário) */
+    initializaton_BLE_function();
+
+    xQueue_BLE_Received_Data = xQueueCreate( 1, sizeof( char *) );
+
+    // xTaskCreate(
+    // receiveCommand                     /* Funcao a qual esta implementado o que a tarefa deve fazer */
+    // ,  "ProcessUartCommand"   /* Nome (para fins de debug, se necessário) */
+    // ,  1024 * 2                         /* Tamanho da stack (em words) reservada para essa tarefa */
+    // ,  NULL                         /* Parametros passados (nesse caso, não há) */
+    // ,  3                            /* Prioridade */
+    // ,  NULL );                      /* Handle da tarefa, opcional (nesse caso, não há) */
+
+     xTaskCreate(
+    task_process_BLE_received_command                     /* Funcao a qual esta implementado o que a tarefa deve fazer */
+    ,  "ProcessBLE_CMD"   /* Nome (para fins de debug, se necessário) */
     ,  1024 * 2                         /* Tamanho da stack (em words) reservada para essa tarefa */
     ,  NULL                         /* Parametros passados (nesse caso, não há) */
     ,  3                            /* Prioridade */
